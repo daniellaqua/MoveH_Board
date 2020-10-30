@@ -1,0 +1,21 @@
+Change Component Comment : Designator=P1 Old Comment=Header 2 New Comment=Labornetz Anschluss
+Change Component Designator: OldDesignator=IC1 NewDesignator=Laderegler
+Change Component Designator: OldDesignator=IC2 NewDesignator=Spannungsregler 1V8
+Change Component Designator: OldDesignator=IC3 NewDesignator=Spannungsregler 3V3
+Change Component Designator: OldDesignator=IC4 NewDesignator=Spannungsüberwachung 3V
+Change Component Designator: OldDesignator=J1 NewDesignator=Micro USB Typ B Anschluss
+Change Component Designator: OldDesignator=J2 NewDesignator=Hohlstecker 2,5mm Ladeanschluss
+Change Component Designator: OldDesignator=Jumper NewDesignator=Battery Select Jumper
+Change Component Designator: OldDesignator=P2 NewDesignator=Jumper
+Change Net Name : Old Net Name=NetIC1_1 New Net Name=NetJumper VDD1_2
+Change Net Name : Old Net Name=NetIC1_2 New Net Name=NetJumper VDD2_2
+Change Net Name : Old Net Name=NetIC1_3 New Net Name=NetLaderegler_3
+Change Net Name : Old Net Name=NetIC1_4 New Net Name=NetLaderegler_4
+Change Net Name : Old Net Name=NetIC1_5 New Net Name=NetLaderegler_5
+Change Net Name : Old Net Name=NetIC1_7 New Net Name=NetLaderegler_7
+Change Net Name : Old Net Name=NetIC1_8 New Net Name=NetLaderegler_8
+Change Net Name : Old Net Name=NetIC2_1 New Net Name=NetL1_1
+Change Net Name : Old Net Name=NetIC2_3 New Net Name=NetSpannungsregler 1V8_3
+Change Net Name : Old Net Name=NetIC2_4 New Net Name=NetR7_1
+Change Net Name : Old Net Name=NetIC3_1 New Net Name=NetL2_1
+Change Net Name : Old Net Name=NetIC3_4 New Net Name=NetR10_1

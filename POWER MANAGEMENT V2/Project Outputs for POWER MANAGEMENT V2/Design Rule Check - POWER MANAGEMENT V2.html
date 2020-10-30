@@ -1,0 +1,411 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 8em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD19\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">29.10.2020</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">12:44:36</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:00</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc" class="file"><acronym title="C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc">C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">25</td></tr>
+</table>
+</td>
+</table><a name="IDK4RELENBSP4JGH4YLJAORAWL2N3SMYTAFHV4MJINB25VWVIGEFNN"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDAZPQD3F0AX43IVCXDOPLWEM0NBOZQISWYKMIFPDYDQ4KHWCOCZFK">Clearance Constraint (Gap=0.15mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID0DE5T3I1TJTPNWMGVTO4TDLOCD25DMCIWRMVQSN3MYJP0VK115EJ">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDJ2WVK1BEHK4OPQLKAKE5ALEOGKDVOVW5COEWH5LTRVYSN2BIXC1D">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDR4GR5ZSHB3O3MRPMU44LQYMCYCRUG3QUYRQH5FBU014OOAR3JRYB">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDPT1DRSSUJ02OKN5X13DKUZ13GJR2MX32P0WB03PFLO44QWFYPB4L">Width Constraint (Min=0.125mm) (Max=0.5mm) (Preferred=0.3mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDWEIUOEY5ZG1TI35YFY15G0UGINN5RO01RNKNV1K1KNJGKXNGTXOM">Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDBDDB52DI4TYRCCVTCM52JAKTIIJ1CZ0MTISPDCDNKUYUQWUD1SM">Hole Size Constraint (Min=0.025mm) (Max=2.54mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDLDK1LVNSW14NNDURCCVSBNKLMBKDDR4QYU0D53DZRB2Z5QW2DEDN">Hole To Hole Clearance (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDTXUTJCFSZAMQH00KVV2ZN4FEYIKJ1YFNMTL0Q1NMROU1MRUWOP4F">Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)</a></td>
+<td class="column2">14</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDIY2GTIMVAUMDPH3OME1134FNDE3MHLR4PMSZMQSQ0MZKTTH5NEI">Silk To Solder Mask (Clearance=0.1mm) (IsPad),(All)</a></td>
+<td class="column2">3</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID0QYDTWEWKZP5D1LA3NNNYS2PYGIHV2YYBVCT1MKTSVGFCGK0Y5BJ">Silk to Silk (Clearance=0.1mm) (All),(All)</a></td>
+<td class="column2">8</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDZVCCCU3WXCKYD1OXPXIWZYU1UIBSXDED2O4VTJFYZ4LLT40XNLZP">Net Antennae (Tolerance=0mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDKZSSHPCEUUYPMUDMOVIKIYCQSOCKTTIPGJIFUCJLSR2FLLNRQVQK">Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">25</td>
+</tr>
+</table><br><a name="IDTXUTJCFSZAMQH00KVV2ZN4FEYIKJ1YFNMTL0Q1NMROU1MRUWOP4F"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2622.899mil|Location2.X=2628.086mil|Location1.Y=2404.824mil|Location2.Y=2410.011mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2622.899mil|Location2.X=2628.086mil|Location1.Y=2404.824mil|Location2.Y=2410.011mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.022mm &lt; 0.1mm) Between Pad Laderegler-1(40.75mm,36mm) on Top Layer And Pad Laderegler-11(42.25mm,35mm) on Top Layer [Top Solder] Mask Sliver [0.022mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2698.686mil|Location2.X=2703.873mil|Location1.Y=2404.824mil|Location2.Y=2410.011mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2698.686mil|Location2.X=2703.873mil|Location1.Y=2404.824mil|Location2.Y=2410.011mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.022mm &lt; 0.1mm) Between Pad Laderegler-10(43.75mm,36mm) on Top Layer And Pad Laderegler-11(42.25mm,35mm) on Top Layer [Top Solder] Mask Sliver [0.022mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2622.899mil|Location2.X=2628.086mil|Location1.Y=2385.139mil|Location2.Y=2390.326mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2622.899mil|Location2.X=2628.086mil|Location1.Y=2385.139mil|Location2.Y=2390.326mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.022mm &lt; 0.1mm) Between Pad Laderegler-11(42.25mm,35mm) on Top Layer And Pad Laderegler-2(40.75mm,35.5mm) on Top Layer [Top Solder] Mask Sliver [0.022mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2622.899mil|Location2.X=2628.086mil|Location1.Y=2365.454mil|Location2.Y=2370.641mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2622.899mil|Location2.X=2628.086mil|Location1.Y=2365.454mil|Location2.Y=2370.641mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.022mm &lt; 0.1mm) Between Pad Laderegler-11(42.25mm,35mm) on Top Layer And Pad Laderegler-3(40.75mm,35mm) on Top Layer [Top Solder] Mask Sliver [0.022mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2622.899mil|Location2.X=2628.086mil|Location1.Y=2345.769mil|Location2.Y=2350.956mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2622.899mil|Location2.X=2628.086mil|Location1.Y=2345.769mil|Location2.Y=2350.956mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.022mm &lt; 0.1mm) Between Pad Laderegler-11(42.25mm,35mm) on Top Layer And Pad Laderegler-4(40.75mm,34.5mm) on Top Layer [Top Solder] Mask Sliver [0.022mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2622.899mil|Location2.X=2628.086mil|Location1.Y=2326.084mil|Location2.Y=2331.271mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2622.899mil|Location2.X=2628.086mil|Location1.Y=2326.084mil|Location2.Y=2331.271mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.022mm &lt; 0.1mm) Between Pad Laderegler-11(42.25mm,35mm) on Top Layer And Pad Laderegler-5(40.75mm,34mm) on Top Layer [Top Solder] Mask Sliver [0.022mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2698.686mil|Location2.X=2703.873mil|Location1.Y=2326.084mil|Location2.Y=2331.271mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2698.686mil|Location2.X=2703.873mil|Location1.Y=2326.084mil|Location2.Y=2331.271mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.022mm &lt; 0.1mm) Between Pad Laderegler-11(42.25mm,35mm) on Top Layer And Pad Laderegler-6(43.75mm,34mm) on Top Layer [Top Solder] Mask Sliver [0.022mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2698.686mil|Location2.X=2703.873mil|Location1.Y=2345.769mil|Location2.Y=2350.956mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2698.686mil|Location2.X=2703.873mil|Location1.Y=2345.769mil|Location2.Y=2350.956mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.022mm &lt; 0.1mm) Between Pad Laderegler-11(42.25mm,35mm) on Top Layer And Pad Laderegler-7(43.75mm,34.5mm) on Top Layer [Top Solder] Mask Sliver [0.022mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2698.686mil|Location2.X=2703.873mil|Location1.Y=2365.454mil|Location2.Y=2370.641mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2698.686mil|Location2.X=2703.873mil|Location1.Y=2365.454mil|Location2.Y=2370.641mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.022mm &lt; 0.1mm) Between Pad Laderegler-11(42.25mm,35mm) on Top Layer And Pad Laderegler-8(43.75mm,35mm) on Top Layer [Top Solder] Mask Sliver [0.022mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2698.686mil|Location2.X=2703.873mil|Location1.Y=2385.139mil|Location2.Y=2390.326mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2698.686mil|Location2.X=2703.873mil|Location1.Y=2385.139mil|Location2.Y=2390.326mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.022mm &lt; 0.1mm) Between Pad Laderegler-11(42.25mm,35mm) on Top Layer And Pad Laderegler-9(43.75mm,35.5mm) on Top Layer [Top Solder] Mask Sliver [0.022mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1239.469mil|Location2.X=1244.656mil|Location1.Y=1297.603mil|Location2.Y=1302.79mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1239.469mil|Location2.X=1244.656mil|Location1.Y=1297.603mil|Location2.Y=1302.79mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.047mm &lt; 0.1mm) Between Pad Micro USB-1(6.925mm,7.3mm) on Top Layer And Pad Micro USB-2(6.925mm,7.95mm) on Top Layer [Top Solder] Mask Sliver [0.047mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1239.469mil|Location2.X=1244.656mil|Location1.Y=1323.194mil|Location2.Y=1328.381mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1239.469mil|Location2.X=1244.656mil|Location1.Y=1323.194mil|Location2.Y=1328.381mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.047mm &lt; 0.1mm) Between Pad Micro USB-2(6.925mm,7.95mm) on Top Layer And Pad Micro USB-3(6.925mm,8.6mm) on Top Layer [Top Solder] Mask Sliver [0.047mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1239.469mil|Location2.X=1244.656mil|Location1.Y=1348.784mil|Location2.Y=1353.972mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1239.469mil|Location2.X=1244.656mil|Location1.Y=1348.784mil|Location2.Y=1353.972mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.047mm &lt; 0.1mm) Between Pad Micro USB-3(6.925mm,8.6mm) on Top Layer And Pad Micro USB-4(6.925mm,9.25mm) on Top Layer [Top Solder] Mask Sliver [0.047mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1239.469mil|Location2.X=1244.656mil|Location1.Y=1374.375mil|Location2.Y=1379.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1239.469mil|Location2.X=1244.656mil|Location1.Y=1374.375mil|Location2.Y=1379.562mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.047mm &lt; 0.1mm) Between Pad Micro USB-4(6.925mm,9.25mm) on Top Layer And Pad Micro USB-5(6.925mm,9.9mm) on Top Layer [Top Solder] Mask Sliver [0.047mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDIY2GTIMVAUMDPH3OME1134FNDE3MHLR4PMSZMQSQ0MZKTTH5NEI"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk To Solder Mask (Clearance=0.1mm) (IsPad),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2061.549mil|Location2.X=2065.174mil|Location1.Y=2124.172mil|Location2.Y=2127.797mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2061.549mil|Location2.X=2065.174mil|Location1.Y=2124.172mil|Location2.Y=2127.797mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.1mm) Between Pad C1-2(27.45mm,29mm) on Top Layer And Text "LED STAT1" (25.55mm,28.45mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4819.627mil|Location2.X=4823.252mil|Location1.Y=2162.969mil|Location2.Y=2166.594mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4819.627mil|Location2.X=4823.252mil|Location1.Y=2162.969mil|Location2.Y=2166.594mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.1mm) Between Pad C6-1(97.5mm,29.2mm) on Top Layer And Text "Voltage Detection" (90.97mm,29.341mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2360.129mil|Location2.X=2363.754mil|Location1.Y=2116.291mil|Location2.Y=2119.916mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2360.129mil|Location2.X=2363.754mil|Location1.Y=2116.291mil|Location2.Y=2119.916mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.1mm) Between Pad R1-1(35.15mm,28.975mm) on Top Layer And Text "R2" (34.331mm,27.876mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID0QYDTWEWKZP5D1LA3NNNYS2PYGIHV2YYBVCT1MKTSVGFCGK0Y5BJ"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk to Silk (Clearance=0.1mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1326.442mil|Location2.X=1330.066mil|Location1.Y=2926.939mil|Location2.Y=2930.563mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1326.442mil|Location2.X=1330.066mil|Location1.Y=2926.939mil|Location2.Y=2930.563mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.1mm) Between Arc (8.45mm,48.895mm) on Top Overlay And Text "Hohlstecker" (4.5mm,48.995mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1327.756mil|Location2.X=1331.381mil|Location1.Y=2927.125mil|Location2.Y=2930.749mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1327.756mil|Location2.X=1331.381mil|Location1.Y=2927.125mil|Location2.Y=2930.749mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.1mm) Between Arc (8.45mm,48.895mm) on Top Overlay And Text "Hohlstecker" (4.5mm,48.995mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3270.941mil|Location2.X=3274.566mil|Location1.Y=2194.375mil|Location2.Y=2198mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3270.941mil|Location2.X=3274.566mil|Location1.Y=2194.375mil|Location2.Y=2198mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.1mm) Between Text "Battery Connection 2" (53.45mm,29.8mm) on Top Overlay And Track (56.77mm,30.48mm)(59.31mm,30.48mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3552.908mil|Location2.X=3556.533mil|Location1.Y=2213.447mil|Location2.Y=2217.072mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3552.908mil|Location2.X=3556.533mil|Location1.Y=2213.447mil|Location2.Y=2217.072mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.1mm) Between Text "Battery Select Jumper" (64.75mm,27.55mm) on Top Overlay And Track (64.98mm,28.24mm)(64.98mm,35.86mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3550.408mil|Location2.X=3555.595mil|Location1.Y=2109.218mil|Location2.Y=2114.405mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3550.408mil|Location2.X=3555.595mil|Location1.Y=2109.218mil|Location2.Y=2114.405mil|Absolute=True">Silk To Silk Clearance Constraint: (0.068mm &lt; 0.1mm) Between Text "Battery Select Jumper" (64.75mm,27.55mm) on Top Overlay And Track (64.98mm,28.24mm)(67.52mm,28.24mm) on Top Overlay Silk Text to Silk Clearance [0.068mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3550.408mil|Location2.X=3555.595mil|Location1.Y=2409.218mil|Location2.Y=2414.405mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3550.408mil|Location2.X=3555.595mil|Location1.Y=2409.218mil|Location2.Y=2414.405mil|Absolute=True">Silk To Silk Clearance Constraint: (0.068mm &lt; 0.1mm) Between Text "Battery Select Jumper" (64.75mm,27.55mm) on Top Overlay And Track (64.98mm,35.86mm)(67.52mm,35.86mm) on Top Overlay Silk Text to Silk Clearance [0.068mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3207.301mil|Location2.X=3210.926mil|Location1.Y=2105.26mil|Location2.Y=2108.885mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3207.301mil|Location2.X=3210.926mil|Location1.Y=2105.26mil|Location2.Y=2108.885mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.1mm) Between Text "Jumper" (54.54mm,28.356mm) on Top Overlay And Track (54.23mm,28.02mm)(61.85mm,28.02mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4446.914mil|Location2.X=4450.538mil|Location1.Y=2746.653mil|Location2.Y=2750.278mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projects\POWER MANAGEMENT V2\POWER MANAGEMENT V2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4446.914mil|Location2.X=4450.538mil|Location1.Y=2746.653mil|Location2.Y=2750.278mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.1mm) Between Text "R8" (87.315mm,43.887mm) on Top Overlay And Text "Spannungsregler 1V80" (77.491mm,44.116mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

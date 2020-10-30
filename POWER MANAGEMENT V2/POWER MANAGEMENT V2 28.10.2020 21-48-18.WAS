@@ -1,0 +1,31 @@
+R12 R1
+C6 C1
+Voltage Detection Voltage Detection1
+R10 R2
+R11 R3
+Spannungsregler 3V3 Spannungsregler 1
+Hohlstecker  Hohlstecker 1
+Micro USB Micro USB1
+Labornetz  Labornetz 1
+C5 C2
+L2 L1
+R9 R4
+LED /PG LED /PG1
+R7 R5
+R2 R6
+R1 R7
+R5 R8
+R8 R9
+Laderegler Laderegler1
+R4 R10
+R6 R11
+R3 R12
+Spannungsregler 1V80 Spannungsregler 2
+Jumper Jumper1
+Jumper Jumper2
+C4 C3
+L1 L2
+C3 C4
+Battery Select Jumper Battery Select Jumper1
+C1 C5
+C2 C6

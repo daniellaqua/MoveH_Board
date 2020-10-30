@@ -1,0 +1,4 @@
+Change Component Comment : Designator=P1 Old Comment=Labornetz Anschluss New Comment=Labornetz 
+Change Component Designator: OldDesignator=Hohlstecker 2,5mm Ladeanschluss NewDesignator=Hohlstecker 
+Change Component Designator: OldDesignator=Micro USB Typ B Anschluss NewDesignator=Micro USB
+Change Component Designator: OldDesignator=Spannungsüberwachung 3V NewDesignator=Voltage Detection

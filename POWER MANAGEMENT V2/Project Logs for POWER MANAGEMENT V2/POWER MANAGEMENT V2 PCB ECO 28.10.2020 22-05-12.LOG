@@ -1,0 +1,31 @@
+Change Component Designator: OldDesignator=Battery Select Jumper1 NewDesignator=Battery Select Jumper
+Change Component Designator: OldDesignator=C1 NewDesignator=C6
+Change Component Designator: OldDesignator=C2 NewDesignator=C5
+Change Component Designator: OldDesignator=C3 NewDesignator=C4
+Change Component Designator: OldDesignator=C4 NewDesignator=C3
+Change Component Designator: OldDesignator=C5 NewDesignator=C1
+Change Component Designator: OldDesignator=C6 NewDesignator=C2
+Change Component Designator: OldDesignator=Hohlstecker 1 NewDesignator=Hohlstecker 
+Change Component Designator: OldDesignator=Jumper1 NewDesignator=Jumper
+Change Component Designator: OldDesignator=Jumper2 NewDesignator=Jumper
+Change Component Designator: OldDesignator=L1 NewDesignator=L2
+Change Component Designator: OldDesignator=L2 NewDesignator=L1
+Change Component Designator: OldDesignator=Labornetz 1 NewDesignator=Labornetz 
+Change Component Designator: OldDesignator=Laderegler1 NewDesignator=Laderegler
+Change Component Designator: OldDesignator=LED /PG1 NewDesignator=LED /PG
+Change Component Designator: OldDesignator=Micro USB1 NewDesignator=Micro USB
+Change Component Designator: OldDesignator=R1 NewDesignator=R12
+Change Component Designator: OldDesignator=R2 NewDesignator=R10
+Change Component Designator: OldDesignator=R3 NewDesignator=R11
+Change Component Designator: OldDesignator=R4 NewDesignator=R9
+Change Component Designator: OldDesignator=R5 NewDesignator=R7
+Change Component Designator: OldDesignator=R6 NewDesignator=R2
+Change Component Designator: OldDesignator=R7 NewDesignator=R1
+Change Component Designator: OldDesignator=R8 NewDesignator=R5
+Change Component Designator: OldDesignator=R9 NewDesignator=R8
+Change Component Designator: OldDesignator=R10 NewDesignator=R4
+Change Component Designator: OldDesignator=R11 NewDesignator=R6
+Change Component Designator: OldDesignator=R12 NewDesignator=R3
+Change Component Designator: OldDesignator=Spannungsregler 1 NewDesignator=Spannungsregler 3V3
+Change Component Designator: OldDesignator=Spannungsregler 2 NewDesignator=Spannungsregler 1V80
+Change Component Designator: OldDesignator=Voltage Detection1 NewDesignator=Voltage Detection

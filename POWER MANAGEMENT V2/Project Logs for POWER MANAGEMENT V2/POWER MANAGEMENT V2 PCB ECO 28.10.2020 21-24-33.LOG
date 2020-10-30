@@ -1,0 +1,3 @@
+Change Component Footprint: Designator=LED /PG Old Footprint=LED-1 New Footprint=1608[0603]
+Change Component Footprint: Designator=LED STAT1 Old Footprint=LED-1 New Footprint=1608[0603]
+Change Component Footprint: Designator=LED STAT2 Old Footprint=LED-1 New Footprint=1608[0603]
