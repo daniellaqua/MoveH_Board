@@ -1,0 +1,40 @@
+Removed Pin From Net: NetName=GND Pin=C1-1
+Removed Pin From Net: NetName=5V Ladespannung Pin=C1-2
+Removed Pin From Net: NetName=GND Pin=C2-1
+Removed Pin From Net: NetName=NetC2_2 Pin=C2-2
+Removed Pin From Net: NetName=GND Pin=C3-1
+Removed Pin From Net: NetName=NetC3_2 Pin=C3-2
+Removed Member From Class: ClassName=laderegler Member=C1
+Removed Member From Class: ClassName=laderegler Member=C2
+Removed Member From Class: ClassName=laderegler Member=C3
+Change Component Designator: OldDesignator=LED Power Good NewDesignator=LED Power Good1
+Change Component Designator: OldDesignator=LED stat1 NewDesignator=LED stat2
+Change Component Designator: OldDesignator=LED stat2 NewDesignator=LED stat1
+Change Component Designator: OldDesignator=Thermistor NewDesignator=Thermistor1
+Added Component: Designator=1(VJ1206)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Fitted"; Value = "False"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1µF"; VariantName = "[No Variations]"
+Added Component: Designator=2(VJ1206)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Fitted"; Value = "False"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1µF"; VariantName = "[No Variations]"
+Added Component: Designator=3(VJ1206)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Fitted"; Value = "False"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1µF"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=5V Ladespannung Pin=1-1
+Added Pin To Net: NetName=GND Pin=1-2
+Added Pin To Net: NetName=NetC2_2 Pin=2-1
+Added Pin To Net: NetName=GND Pin=2-2
+Added Pin To Net: NetName=NetC3_2 Pin=3-1
+Added Pin To Net: NetName=GND Pin=3-2
+Change Net Name : Old Net Name=NetC2_2 New Net Name=Net2_1
+Change Net Name : Old Net Name=NetC3_2 New Net Name=Net3_1
+Change Net Name : Old Net Name=NetLED Power Good_2 New Net Name=NetLED Power Good1_2
+Change Net Name : Old Net Name=NetLED stat1_2 New Net Name=NetLED stat2_2
+Change Net Name : Old Net Name=NetLED stat2_2 New Net Name=NetLED stat1_2
+Added Member To Class: ClassName=laderegler Member=Component 1 VJ1206
+Added Member To Class: ClassName=laderegler Member=Component 2 VJ1206
+Added Member To Class: ClassName=laderegler Member=Component 3 VJ1206
+Added Room: Name=laderegler

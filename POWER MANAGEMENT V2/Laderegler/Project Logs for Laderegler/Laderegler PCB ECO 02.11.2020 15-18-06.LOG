@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=GND Pin=Laderegler1-6
+Removed Pin From Net: NetName=GND Pin=R4-2
+Added Pin To Net: NetName=GND Pin=Laderegler1-5
+Added Pin To Net: NetName=GND Pin=R4-1
+Added Pin To Net: NetName=NetLaderegler1_6 Pin=Laderegler1-6
+Added Pin To Net: NetName=NetLaderegler1_6 Pin=R4-2
+Added Net: Name=NetLaderegler1_6
+Added Member To Class: ClassName=laderegler Member=Component LED stat1 LED SMD 0603
+Added Room: Name=laderegler

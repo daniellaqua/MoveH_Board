@@ -1,0 +1,89 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\Public\Documents\Altium\Projects\MoveH_Board\POWER MANAGEMENT V2\Laderegler\Laderegler.PcbDoc
+Date     : 02.11.2020
+Time     : 16:32:59
+
+Processing Rule : Clearance Constraint (Gap=0.1mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.2mm) (Max=0.6mm) (Preferred=0.5mm) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=0.025mm) (Max=2.54mm) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=0.254mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)
+   Violation between Minimum Solder Mask Sliver Constraint: (0.022mm < 0.1mm) Between Pad Laderegler1-1(66.04mm,54.84mm) on Top Layer And Pad Laderegler1-11(67.54mm,53.84mm) on Top Layer [Top Solder] Mask Sliver [0.022mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.022mm < 0.1mm) Between Pad Laderegler1-10(69.04mm,54.84mm) on Top Layer And Pad Laderegler1-11(67.54mm,53.84mm) on Top Layer [Top Solder] Mask Sliver [0.022mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.022mm < 0.1mm) Between Pad Laderegler1-11(67.54mm,53.84mm) on Top Layer And Pad Laderegler1-2(66.04mm,54.34mm) on Top Layer [Top Solder] Mask Sliver [0.022mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.022mm < 0.1mm) Between Pad Laderegler1-11(67.54mm,53.84mm) on Top Layer And Pad Laderegler1-3(66.04mm,53.84mm) on Top Layer [Top Solder] Mask Sliver [0.022mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.022mm < 0.1mm) Between Pad Laderegler1-11(67.54mm,53.84mm) on Top Layer And Pad Laderegler1-4(66.04mm,53.34mm) on Top Layer [Top Solder] Mask Sliver [0.022mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.022mm < 0.1mm) Between Pad Laderegler1-11(67.54mm,53.84mm) on Top Layer And Pad Laderegler1-5(66.04mm,52.84mm) on Top Layer [Top Solder] Mask Sliver [0.022mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.022mm < 0.1mm) Between Pad Laderegler1-11(67.54mm,53.84mm) on Top Layer And Pad Laderegler1-6(69.04mm,52.84mm) on Top Layer [Top Solder] Mask Sliver [0.022mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.022mm < 0.1mm) Between Pad Laderegler1-11(67.54mm,53.84mm) on Top Layer And Pad Laderegler1-7(69.04mm,53.34mm) on Top Layer [Top Solder] Mask Sliver [0.022mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.022mm < 0.1mm) Between Pad Laderegler1-11(67.54mm,53.84mm) on Top Layer And Pad Laderegler1-8(69.04mm,53.84mm) on Top Layer [Top Solder] Mask Sliver [0.022mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.022mm < 0.1mm) Between Pad Laderegler1-11(67.54mm,53.84mm) on Top Layer And Pad Laderegler1-9(69.04mm,54.34mm) on Top Layer [Top Solder] Mask Sliver [0.022mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.047mm < 0.1mm) Between Pad Micro USB1-1(42.925mm,52.04mm) on Top Layer And Pad Micro USB1-2(42.925mm,52.69mm) on Top Layer [Top Solder] Mask Sliver [0.047mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.047mm < 0.1mm) Between Pad Micro USB1-2(42.925mm,52.69mm) on Top Layer And Pad Micro USB1-3(42.925mm,53.34mm) on Top Layer [Top Solder] Mask Sliver [0.047mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.047mm < 0.1mm) Between Pad Micro USB1-3(42.925mm,53.34mm) on Top Layer And Pad Micro USB1-4(42.925mm,53.99mm) on Top Layer [Top Solder] Mask Sliver [0.047mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.047mm < 0.1mm) Between Pad Micro USB1-4(42.925mm,53.99mm) on Top Layer And Pad Micro USB1-5(42.925mm,54.64mm) on Top Layer [Top Solder] Mask Sliver [0.047mm]
+Rule Violations :14
+
+Processing Rule : Silk To Solder Mask (Clearance=0.254mm) (IsPad),(All)
+   Violation between Silk To Solder Mask Clearance Constraint: (0.25mm < 0.254mm) Between Arc (65.615mm,55.49mm) on Top Overlay And Pad Laderegler1-1(66.04mm,54.84mm) on Top Layer [Top Overlay] to [Top Solder] clearance [0.25mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.254mm) Between Pad 1-1(50.725mm,57.25mm) on Top Layer And Text "LED stat2" (50.115mm,57.117mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.1mm < 0.254mm) Between Pad LED Power Good1-1(50.775mm,47.915mm) on Top Layer And Track (51.45mm,47.565mm)(51.75mm,47.565mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.1mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.1mm < 0.254mm) Between Pad LED Power Good1-1(50.775mm,47.915mm) on Top Layer And Track (51.45mm,48.265mm)(51.75mm,48.265mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.1mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.1mm < 0.254mm) Between Pad LED Power Good1-2(52.425mm,47.915mm) on Top Layer And Track (51.45mm,47.565mm)(51.75mm,47.565mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.1mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.124mm < 0.254mm) Between Pad LED Power Good1-2(52.425mm,47.915mm) on Top Layer And Track (51.45mm,48.265mm)(51.75mm,48.265mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.124mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.1mm < 0.254mm) Between Pad LED stat1-1(50.775mm,51.865mm) on Top Layer And Track (51.45mm,51.515mm)(51.75mm,51.515mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.1mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.1mm < 0.254mm) Between Pad LED stat1-1(50.775mm,51.865mm) on Top Layer And Track (51.45mm,52.215mm)(51.75mm,52.215mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.1mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.1mm < 0.254mm) Between Pad LED stat1-2(52.425mm,51.865mm) on Top Layer And Track (51.45mm,51.515mm)(51.75mm,51.515mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.1mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.124mm < 0.254mm) Between Pad LED stat1-2(52.425mm,51.865mm) on Top Layer And Track (51.45mm,52.215mm)(51.75mm,52.215mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.124mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.254mm) Between Pad LED stat2-1(50.775mm,54.6mm) on Top Layer And Text "LED stat1" (50.116mm,54.36mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.1mm < 0.254mm) Between Pad LED stat2-1(50.775mm,54.6mm) on Top Layer And Track (51.45mm,54.25mm)(51.75mm,54.25mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.1mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.1mm < 0.254mm) Between Pad LED stat2-1(50.775mm,54.6mm) on Top Layer And Track (51.45mm,54.95mm)(51.75mm,54.95mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.1mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.254mm) Between Pad LED stat2-2(52.425mm,54.6mm) on Top Layer And Text "LED stat1" (50.116mm,54.36mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.1mm < 0.254mm) Between Pad LED stat2-2(52.425mm,54.6mm) on Top Layer And Track (51.45mm,54.25mm)(51.75mm,54.25mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.1mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.124mm < 0.254mm) Between Pad LED stat2-2(52.425mm,54.6mm) on Top Layer And Track (51.45mm,54.95mm)(51.75mm,54.95mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.124mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.225mm < 0.254mm) Between Pad Micro USB1-8(40.25mm,57.44mm) on Top Layer And Track (38.1mm,57.09mm)(38.975mm,57.09mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.225mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.225mm < 0.254mm) Between Pad Micro USB1-9(40.25mm,49.24mm) on Top Layer And Track (38.1mm,49.59mm)(38.975mm,49.59mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.225mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.254mm) Between Pad R1-1(55.895mm,54.515mm) on Top Layer And Text "R2" (55.169mm,53.496mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.161mm < 0.254mm) Between Pad R2-1(55.88mm,51.865mm) on Top Layer And Text "LED Power Good1" (50.115mm,50.418mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.161mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.161mm < 0.254mm) Between Pad R2-2(57.93mm,51.865mm) on Top Layer And Text "LED Power Good1" (50.115mm,50.418mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.161mm]
+Rule Violations :21
+
+Processing Rule : Silk to Silk (Clearance=0.254mm) (All),(All)
+   Violation between Silk To Silk Clearance Constraint: (0.228mm < 0.254mm) Between Text "LED Power Good1" (50.115mm,50.418mm) on Top Overlay And Text "R5" (55.202mm,49.541mm) on Top Overlay Silk Text to Silk Clearance [0.228mm]
+   Violation between Silk To Silk Clearance Constraint: (Collision < 0.254mm) Between Text "LED stat1" (50.116mm,54.36mm) on Top Overlay And Track (51.45mm,54.25mm)(51.75mm,54.25mm) on Top Overlay Silk Text to Silk Clearance [0mm]
+   Violation between Silk To Silk Clearance Constraint: (Collision < 0.254mm) Between Text "LED stat1" (50.116mm,54.36mm) on Top Overlay And Track (51.45mm,54.95mm)(51.75mm,54.95mm) on Top Overlay Silk Text to Silk Clearance [0mm]
+   Violation between Silk To Silk Clearance Constraint: (0.218mm < 0.254mm) Between Text "Micro USB1" (37.989mm,58.967mm) on Top Overlay And Track (39.37mm,59.69mm)(39.37mm,64.77mm) on Top Overlay Silk Text to Silk Clearance [0.218mm]
+   Violation between Silk To Silk Clearance Constraint: (0.037mm < 0.254mm) Between Text "Micro USB1" (37.989mm,58.967mm) on Top Overlay And Track (39.37mm,59.69mm)(41.91mm,59.69mm) on Top Overlay Silk Text to Silk Clearance [0.037mm]
+   Violation between Silk To Silk Clearance Constraint: (0.052mm < 0.254mm) Between Text "Micro USB1" (37.989mm,58.967mm) on Top Overlay And Track (41.91mm,59.69mm)(41.91mm,64.77mm) on Top Overlay Silk Text to Silk Clearance [0.052mm]
+Rule Violations :6
+
+Processing Rule : Net Antennae (Tolerance=0mm) (All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
+Rule Violations :0
+
+
+Violations Detected : 41
+Waived Violations : 0
+Time Elapsed        : 00:00:00
