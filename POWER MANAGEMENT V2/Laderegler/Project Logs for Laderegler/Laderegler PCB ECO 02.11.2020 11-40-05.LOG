@@ -1,0 +1,91 @@
+Added Component: Designator=Battery Connector 1(2er Stiftleiste WR-WTB)
+Added Component: Designator=Battery Connector 2(2er Stiftleiste WR-WTB)
+Added Component: Designator=Battery Output 1(2er Stiftleiste WR-WTB)
+Added Component: Designator=Battery Output 2(2er Stiftleiste WR-WTB)
+Added Component: Designator=Jumper1(HDR1X3)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=Jumper2(HDR1X3)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=Jumper VDD1(HDR1X2)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=Jumper VDD2(HDR1X2)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=Jumper VDD3(HDR1X2)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=Jumper VDD4(HDR1X2)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=Jumper VDD5(HDR1X2)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=Jumper VDD6(HDR1X2)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=Power Supply1(2er Stiftleiste WR-WTB)
+Added Component: Designator=RT1(6-0805_L)
+Add component (AddParameter): Name = "Code_IPC"; Value = "RESC2012"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "29-May-2009"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "IPC-7351 Footprint Added."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Chip Resistor 0805 Case Size"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "6-0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "Mar-2003"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "24-Mar-1999"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetBattery Connector 1_1 Pin=Battery Connector 1-1
+Added Pin To Net: NetName=GND Pin=Battery Connector 1-2
+Added Pin To Net: NetName=NetBattery Connector 2_1 Pin=Battery Connector 2-1
+Added Pin To Net: NetName=GND Pin=Battery Connector 2-2
+Added Pin To Net: NetName=Battery 2 Output Pin=Battery Output 1-1
+Added Pin To Net: NetName=GND Pin=Battery Output 1-2
+Added Pin To Net: NetName=NetBattery Output 2_1 Pin=Battery Output 2-1
+Added Pin To Net: NetName=GND Pin=Battery Output 2-2
+Added Pin To Net: NetName=NetC2_2 Pin=Jumper1-1
+Added Pin To Net: NetName=NetBattery Connector 1_1 Pin=Jumper1-2
+Added Pin To Net: NetName=Battery 2 Output Pin=Jumper1-3
+Added Pin To Net: NetName=NetC3_2 Pin=Jumper2-1
+Added Pin To Net: NetName=NetBattery Connector 2_1 Pin=Jumper2-2
+Added Pin To Net: NetName=NetBattery Output 2_1 Pin=Jumper2-3
+Added Pin To Net: NetName=5V Ladespannung Pin=Jumper VDD1-1
+Added Pin To Net: NetName=NetJumper VDD1_2 Pin=Jumper VDD1-2
+Added Pin To Net: NetName=5V Ladespannung Pin=Jumper VDD2-1
+Added Pin To Net: NetName=NetJumper VDD2_2 Pin=Jumper VDD2-2
+Added Pin To Net: NetName=NetJumper VDD3_1 Pin=Jumper VDD3-1
+Added Pin To Net: NetName=NetJumper VDD3_1 Pin=Jumper VDD3-2
+Added Pin To Net: NetName=NetJumper VDD4_1 Pin=Jumper VDD4-1
+Added Pin To Net: NetName=NetJumper VDD3_1 Pin=Jumper VDD4-2
+Added Pin To Net: NetName=GND Pin=Jumper VDD5-1
+Added Pin To Net: NetName=NetJumper VDD4_1 Pin=Jumper VDD5-2
+Added Pin To Net: NetName=GND Pin=Jumper VDD6-1
+Added Pin To Net: NetName=GND Pin=Jumper VDD6-2
+Added Pin To Net: NetName=5V Ladespannung Pin=Power Supply1-1
+Added Pin To Net: NetName=GND Pin=Power Supply1-2
+Added Pin To Net: NetName=NetR3_1 Pin=RT1-1
+Added Pin To Net: NetName=GND Pin=RT1-2
+Added Member To Class: ClassName=Laderegler Member=Component Battery Connector 1 2er Stiftleiste
+Added Member To Class: ClassName=Laderegler Member=Component Battery Connector 2 2er Stiftleiste
+Added Member To Class: ClassName=Laderegler Member=Component Battery Output 1 2er Stiftleiste
+Added Member To Class: ClassName=Laderegler Member=Component Battery Output 2 2er Stiftleiste
+Added Member To Class: ClassName=Laderegler Member=Component Jumper1 Header 3
+Added Member To Class: ClassName=Laderegler Member=Component Jumper2 Header 3
+Added Member To Class: ClassName=Laderegler Member=Component Jumper VDD1 Header 2
+Added Member To Class: ClassName=Laderegler Member=Component Jumper VDD2 Header 2
+Added Member To Class: ClassName=Laderegler Member=Component Jumper VDD3 Header 2
+Added Member To Class: ClassName=Laderegler Member=Component Jumper VDD4 Header 2
+Added Member To Class: ClassName=Laderegler Member=Component Jumper VDD5 Header 2
+Added Member To Class: ClassName=Laderegler Member=Component Jumper VDD6 Header 2
+Added Member To Class: ClassName=Laderegler Member=Component Power Supply1 2er Stiftleiste
+Added Member To Class: ClassName=Laderegler Member=Component RT1 Res Thermal
+Added Room: Name=laderegler
