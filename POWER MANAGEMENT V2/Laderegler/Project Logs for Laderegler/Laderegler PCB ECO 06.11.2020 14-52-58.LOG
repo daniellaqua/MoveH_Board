@@ -1,0 +1,38 @@
+Removed Pin From Net: NetName=NetJumper VDD1_2 Pin=Laderegler1-1
+Removed Pin From Net: NetName=NetJumper VDD2_2 Pin=Laderegler1-2
+Removed Pin From Net: NetName=NetLaderegler1_3 Pin=Laderegler1-3
+Removed Pin From Net: NetName=NetLaderegler1_4 Pin=Laderegler1-4
+Removed Pin From Net: NetName=GND Pin=Laderegler1-5
+Removed Pin From Net: NetName=NetLaderegler1_6 Pin=Laderegler1-6
+Removed Pin From Net: NetName=NetLaderegler1_7 Pin=Laderegler1-7
+Removed Pin From Net: NetName=NetLaderegler1_8 Pin=Laderegler1-8
+Removed Pin From Net: NetName=Net3_1 Pin=Laderegler1-9
+Removed Pin From Net: NetName=Net2_1 Pin=Laderegler1-10
+Removed Pin From Net: NetName=GND Pin=Laderegler1-11
+Removed Member From Class: ClassName=laderegler Member=Laderegler1
+Added Component: Designator=Laderegler(SOP50P490X110-10N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://componentsearchengine.com//MCP73833-AMI_UN.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "1.1mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Microchip"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "MCP73833-AMI/UN"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser2 Part Number"; Value = "579-MCP73833-AMI/UN"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser2 Price/Stock"; Value = "https://www.mouser.com/Search/Refine.aspx?Keyword=579-MCP73833-AMI%2FUN"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetJumper VDD1_2 Pin=Laderegler-1
+Added Pin To Net: NetName=NetJumper VDD2_2 Pin=Laderegler-2
+Added Pin To Net: NetName=NetLaderegler1_3 Pin=Laderegler-3
+Added Pin To Net: NetName=NetLaderegler1_4 Pin=Laderegler-4
+Added Pin To Net: NetName=GND Pin=Laderegler-5
+Added Pin To Net: NetName=NetLaderegler1_6 Pin=Laderegler-6
+Added Pin To Net: NetName=NetLaderegler1_7 Pin=Laderegler-7
+Added Pin To Net: NetName=NetLaderegler1_8 Pin=Laderegler-8
+Added Pin To Net: NetName=Net3_1 Pin=Laderegler-9
+Added Pin To Net: NetName=Net2_1 Pin=Laderegler-10
+Change Net Name : Old Net Name=NetLaderegler1_3 New Net Name=NetLaderegler_3
+Change Net Name : Old Net Name=NetLaderegler1_4 New Net Name=NetLaderegler_4
+Change Net Name : Old Net Name=NetLaderegler1_6 New Net Name=NetLaderegler_6
+Change Net Name : Old Net Name=NetLaderegler1_7 New Net Name=NetLaderegler_7
+Change Net Name : Old Net Name=NetLaderegler1_8 New Net Name=NetLaderegler_8
+Added Member To Class: ClassName=laderegler Member=Component Laderegler MCP73833-AMI_UN
+Added Member To Class: ClassName=laderegler Member=Component Micro USB1 ZX62R-B-5P_30_
+Added Room: Name=laderegler
