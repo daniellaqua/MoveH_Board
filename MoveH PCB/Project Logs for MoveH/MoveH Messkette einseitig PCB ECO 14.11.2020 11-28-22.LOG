@@ -1,0 +1,6 @@
+Change Component Designator: OldDesignator=R18 NewDesignator=10k Therm
+Change Net Name : Old Net Name=NetR11_1 New Net Name=Net10k Therm_2
+Added Member To Class: ClassName=POWER MANAGEMENT Member=Component 4,7µF VJ0603
+Added Member To Class: ClassName=POWER MANAGEMENT Member=Component 470 RES 0603
+Added Member To Class: ClassName=POWER MANAGEMENT Member=Component 470 RES 0603
+Added Room: Name=POWER MANAGEMENT

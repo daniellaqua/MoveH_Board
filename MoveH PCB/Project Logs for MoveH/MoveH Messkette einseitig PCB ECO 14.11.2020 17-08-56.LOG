@@ -1,0 +1,7 @@
+Change Net Name : Old Net Name=Net470_2 New Net Name=/PG
+Change Net Name : Old Net Name=Net470_2 New Net Name=STAT1
+Change Net Name : Old Net Name=Net470_2 New Net Name=STAT2
+Added Member To Class: ClassName=POWER MANAGEMENT Member=Component 4,7µF VJ0603
+Added Member To Class: ClassName=POWER MANAGEMENT Member=Component 470 RES 0603
+Added Member To Class: ClassName=POWER MANAGEMENT Member=Component 470 RES 0603
+Added Room: Name=POWER MANAGEMENT

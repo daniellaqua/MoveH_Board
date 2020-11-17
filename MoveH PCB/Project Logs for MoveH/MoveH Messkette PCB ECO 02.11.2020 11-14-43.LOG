@@ -1,0 +1,18 @@
+Removed Pin From Net: NetName=AVCC Pin=C4-2
+Removed Pin From Net: NetName=AVCC Pin=C5-2
+Removed Pin From Net: NetName=AVCC Pin=MSP430-37
+Removed Pin From Net: NetName=AVCC Pin=MSP430-48
+Removed Pin From Net: NetName=AVCC Pin=P5-2
+Removed Pin From Net: NetName=VBat Pin=R5-2
+Removed Pin From Net: NetName=VBat Pin=R6-1
+Removed Pin From Net: NetName=VBat Pin=R7-1
+Added Pin To Net: NetName=VBat Pin=C4-2
+Added Pin To Net: NetName=VBat Pin=C5-2
+Added Pin To Net: NetName=VBat Pin=MSP430-37
+Added Pin To Net: NetName=VBat Pin=MSP430-48
+Added Pin To Net: NetName=VBat Pin=P5-2
+Added Pin To Net: NetName=AVCC Pin=R5-2
+Added Pin To Net: NetName=AVCC Pin=R6-1
+Added Pin To Net: NetName=AVCC Pin=R7-1
+Change Net Name : Old Net Name=AVCC New Net Name=VBat
+Change Net Name : Old Net Name=VBat New Net Name=AVCC

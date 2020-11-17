@@ -1,0 +1,10 @@
+Change component parameters: Designator = "4,7µF"; Footprint = "VJ0603"; UniqueID = "\FDCLYAIA"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "1650946"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "4,7µF"; VariantName = "[No Variations]"
+Change Net Name : Old Net Name=AVCC New Net Name=3,3V
+Added Member To Class: ClassName=POWER MANAGEMENT Member=Component 4,7µF VJ0603
+Added Member To Class: ClassName=POWER MANAGEMENT Member=Component 470 RES 0603
+Added Member To Class: ClassName=POWER MANAGEMENT Member=Component 470 RES 0603
+Added Room: Name=POWER MANAGEMENT

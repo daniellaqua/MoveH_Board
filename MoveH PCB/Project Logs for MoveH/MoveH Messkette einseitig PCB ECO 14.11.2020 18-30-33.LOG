@@ -1,0 +1,11 @@
+Change Component Designator: OldDesignator=2.2µF NewDesignator=C7
+Change Component Designator: OldDesignator=2.2µF NewDesignator=C8
+Change Component Designator: OldDesignator=2.2µF NewDesignator=C14
+Change Component Designator: OldDesignator=10nF NewDesignator=C13
+Added Member To Class: ClassName=POWER MANAGEMENT Member=Component 4,7µF VJ0603
+Added Member To Class: ClassName=POWER MANAGEMENT Member=Component 10k RES 0805
+Added Member To Class: ClassName=POWER MANAGEMENT Member=Component 470 RES 0603
+Added Member To Class: ClassName=POWER MANAGEMENT Member=Component 470 RES 0603
+Added Member To Class: ClassName=POWER MANAGEMENT Member=Component C8 Cap
+Added Member To Class: ClassName=POWER MANAGEMENT Member=Component C14 Cap
+Added Room: Name=POWER MANAGEMENT

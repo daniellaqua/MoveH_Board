@@ -1,0 +1,6 @@
+Change Component Comment : Designator=P7 Old Comment=Header 3H New Comment=EIN/AUS Schalter
+Change Component Designator: OldDesignator=P1 NewDesignator=Battery
+Change Component Designator: OldDesignator=P7 NewDesignator=EIN/AUS Schalter
+Change Net Name : Old Net Name=NetP1_1 New Net Name=NetBattery_1
+Change Net Name : Old Net Name=NetP7_3 New Net Name=NetEIN/AUS Schalter_3
+Added Room: Name=POWER MANAGEMENT

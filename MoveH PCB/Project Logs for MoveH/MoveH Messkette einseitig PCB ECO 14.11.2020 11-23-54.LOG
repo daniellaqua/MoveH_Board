@@ -1,0 +1,33 @@
+Removed Pin From Net: NetName=Net1_1 Pin=1-1
+Removed Pin From Net: NetName=Net1_2 Pin=1-2
+Removed Pin From Net: NetName=Net/PG_2 Pin=2-1
+Removed Pin From Net: NetName=Net2_2 Pin=2-2
+Removed Pin From Net: NetName=Net1_2 Pin=Laderegler-4
+Removed Pin From Net: NetName=Net2_2 Pin=Laderegler-7
+Removed Member From Class: ClassName=POWER MANAGEMENT Member=1
+Removed Member From Class: ClassName=POWER MANAGEMENT Member=2
+Added Component: Designator=470(Vishay D11/CRCW0603 Resistor)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Fitted"; Value = "False"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1738901RL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=470(Vishay D11/CRCW0603 Resistor)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Fitted"; Value = "False"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1738901RL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=Net1_1 Pin=470-1
+Added Pin To Net: NetName=Net/PG_2 Pin=470-1
+Added Pin To Net: NetName=Net1_2 Pin=470-2
+Added Pin To Net: NetName=Net2_2 Pin=470-2
+Added Pin To Net: NetName=Net2_2 Pin=Laderegler-4
+Added Pin To Net: NetName=Net1_2 Pin=Laderegler-7
+Change Net Name : Old Net Name=Net1_1 New Net Name=Net470_1
+Change Net Name : Old Net Name=Net1_2 New Net Name=Net470_2
+Change Net Name : Old Net Name=Net2_2 New Net Name=Net470_2
+Added Member To Class: ClassName=POWER MANAGEMENT Member=Component 4,7µF VJ0603
+Added Member To Class: ClassName=POWER MANAGEMENT Member=Component 470 RES 0603
+Added Member To Class: ClassName=POWER MANAGEMENT Member=Component 470 RES 0603
+Added Room: Name=POWER MANAGEMENT

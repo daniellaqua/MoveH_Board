@@ -1,0 +1,150 @@
+Removed Pin From Net: NetName=GND Pin=C7-1
+Removed Pin From Net: NetName=Ladespannung Pin=C7-2
+Removed Pin From Net: NetName=GND Pin=C8-1
+Removed Pin From Net: NetName=NetC8_2 Pin=C8-2
+Removed Pin From Net: NetName=Ladespannung Pin=D1-1
+Removed Pin From Net: NetName=NetD1_2 Pin=D1-2
+Removed Pin From Net: NetName=NetC8_2 Pin=EIN/AUS Schalter-1
+Removed Pin From Net: NetName=GND Pin=Laderegler-1
+Removed Pin From Net: NetName=NetLaderegler_2 Pin=Laderegler-2
+Removed Pin From Net: NetName=NetC8_2 Pin=Laderegler-3
+Removed Pin From Net: NetName=Ladespannung Pin=Laderegler-4
+Removed Pin From Net: NetName=NetLaderegler_6 Pin=Laderegler-6
+Removed Pin From Net: NetName=GND Pin=Laderegler-7
+Removed Pin From Net: NetName=GND Pin=R11-1
+Removed Pin From Net: NetName=NetLaderegler_6 Pin=R11-2
+Removed Pin From Net: NetName=NetD1_2 Pin=R12-1
+Removed Pin From Net: NetName=NetLaderegler_2 Pin=R12-2
+Removed Member From Class: ClassName=POWER MANAGEMENT Member=C7
+Removed Member From Class: ClassName=POWER MANAGEMENT Member=C8
+Removed Member From Class: ClassName=POWER MANAGEMENT Member=D1
+Change Component Footprint: Designator=R11 Old Footprint=J1-0603 New Footprint=D12CRCW0805
+Change Component Footprint: Designator=R12 Old Footprint=J1-0603 New Footprint=D12CRCW0805
+Change Component Footprint: Designator=Laderegler Old Footprint=SON50P200X200X80-7N-D New Footprint=SOP50P490X110-10N
+Change Component Comment : Designator=Laderegler Old Comment=MCP73830LT-0AAI_MYY New Comment=MCP73833-AMI_UN
+Change Component Comment : Designator=R10 Old Comment=Res3 New Comment=10
+Change Component Comment : Designator=R11 Old Comment=Res3 New Comment=RES 0805
+Change Component Comment : Designator=R12 Old Comment=Res3 New Comment=RES 0805
+Change component parameters: Designator = "Laderegler"; Footprint = "SOP50P490X110-10N"; UniqueID = "\ZJFLNKIE"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Datasheet Link"; Value = "https://componentsearchengine.com//MCP73833-AMI_UN.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "1.1mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "Microchip"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "MCP73833-AMI/UN"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser2 Part Number"; Value = "579-MCP73833-AMI/UN"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser2 Price/Stock"; Value = "https://www.mouser.com/Search/Refine.aspx?Keyword=579-MCP73833-AMI%2FUN"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R11"; Footprint = "D12CRCW0805"; UniqueID = "\LLSFFSOY"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Fitted"; Value = "False"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "1738935"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "R12"; Footprint = "D12CRCW0805"; UniqueID = "\GIZHVRSM"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Fitted"; Value = "False"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "1738935"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=/PG(SMD LED 0603)
+Add component. Clean all parameters for all variants
+Added Component: Designator=1(Vishay D11/CRCW0603 Resistor)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Fitted"; Value = "False"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1738901RL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=2(Vishay D11/CRCW0603 Resistor)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Fitted"; Value = "False"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1738901RL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=4,7µF(VJ0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1650946"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=4,7µF(VJ0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1650946"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=10k(D12CRCW0805)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Fitted"; Value = "False"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1738935"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=470(Vishay D11/CRCW0603 Resistor)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Fitted"; Value = "False"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1738901RL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R18(AXIAL-0.3)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Axial Device, Thru-Hole; 2 Leads; 0.3 in Pin Spacing"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "AXIAL-0.3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1K"; VariantName = "[No Variations]"
+Added Component: Designator=STAT1(SMD LED 0603)
+Add component. Clean all parameters for all variants
+Added Component: Designator=STAT2(SMD LED 0603)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=Ladespannung Pin=/PG-1
+Added Pin To Net: NetName=NetC8_2 Pin=1-1
+Added Pin To Net: NetName=NetD1_2 Pin=1-2
+Added Pin To Net: NetName=NetLaderegler_2 Pin=2-2
+Added Pin To Net: NetName=Ladespannung Pin=4,7µF-1
+Added Pin To Net: NetName=NetLaderegler_6 Pin=4,7µF-1
+Added Pin To Net: NetName=GND Pin=4,7µF-2
+Added Pin To Net: NetName=GND Pin=4,7µF-2
+Added Pin To Net: NetName=GND Pin=10k-1
+Added Pin To Net: NetName=NetLaderegler_6 Pin=EIN/AUS Schalter-1
+Added Pin To Net: NetName=Ladespannung Pin=Laderegler-1
+Added Pin To Net: NetName=Ladespannung Pin=Laderegler-2
+Added Pin To Net: NetName=NetD1_2 Pin=Laderegler-4
+Added Pin To Net: NetName=NetLaderegler_2 Pin=Laderegler-7
+Added Pin To Net: NetName=NetLaderegler_6 Pin=Laderegler-9
+Added Pin To Net: NetName=GND Pin=R12-1
+Added Pin To Net: NetName=GND Pin=R18-1
+Added Pin To Net: NetName=Ladespannung Pin=STAT1-1
+Added Pin To Net: NetName=Ladespannung Pin=STAT2-1
+Added Pin To Net: NetName=NetC8_2 Pin=STAT2-2
+Change Net Name : Old Net Name=NetC8_2 New Net Name=Net1_1
+Change Net Name : Old Net Name=NetD1_2 New Net Name=Net1_2
+Change Net Name : Old Net Name=NetLaderegler_2 New Net Name=Net2_2
+Change Net Name : Old Net Name=NetLaderegler_6 New Net Name=Net4,7µF_1
+Added Pin To Net: NetName=Net10k_2 Pin=10k-2
+Added Pin To Net: NetName=Net10k_2 Pin=Laderegler-6
+Added Net: Name=Net10k_2
+Added Pin To Net: NetName=Net470_1 Pin=470-1
+Added Pin To Net: NetName=Net470_1 Pin=STAT1-2
+Added Net: Name=Net470_1
+Added Pin To Net: NetName=Net470_2 Pin=470-2
+Added Pin To Net: NetName=Net470_2 Pin=Laderegler-3
+Added Net: Name=Net470_2
+Added Pin To Net: NetName=Net/PG_2 Pin=/PG-2
+Added Pin To Net: NetName=Net/PG_2 Pin=2-1
+Added Net: Name=Net/PG_2
+Added Pin To Net: NetName=NetLaderegler_8 Pin=Laderegler-8
+Added Pin To Net: NetName=NetLaderegler_8 Pin=R11-2
+Added Net: Name=NetLaderegler_8
+Added Pin To Net: NetName=NetR11_1 Pin=R11-1
+Added Pin To Net: NetName=NetR11_1 Pin=R12-2
+Added Pin To Net: NetName=NetR11_1 Pin=R18-2
+Added Net: Name=NetR11_1
+Added Member To Class: ClassName=POWER MANAGEMENT Member=Component /PG LED SMD 0603
+Added Member To Class: ClassName=POWER MANAGEMENT Member=Component 1 470
+Added Member To Class: ClassName=POWER MANAGEMENT Member=Component 2 470
+Added Member To Class: ClassName=POWER MANAGEMENT Member=Component 4,7µF VJ0603
+Added Member To Class: ClassName=POWER MANAGEMENT Member=Component 4,7µF VJ0603
+Added Member To Class: ClassName=POWER MANAGEMENT Member=Component 10k RES 0805
+Added Member To Class: ClassName=POWER MANAGEMENT Member=Component 470 RES 0603
+Added Member To Class: ClassName=POWER MANAGEMENT Member=Component R18 10k Therm
+Added Member To Class: ClassName=POWER MANAGEMENT Member=Component STAT1 LED SMD 0603
+Added Member To Class: ClassName=POWER MANAGEMENT Member=Component STAT2 LED SMD 0603
+Added Room: Name=POWER MANAGEMENT

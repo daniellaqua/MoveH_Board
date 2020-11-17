@@ -1,0 +1,5 @@
+Added Pin To Net: NetName=GND Pin=MSP430-36
+Added Pin To Net: NetName=AVCC Pin=MSP430-37
+Added Pin To Net: NetName=GND Pin=MSP430-41
+Added Pin To Net: NetName=GND Pin=MSP430-44
+Added Pin To Net: NetName=GND Pin=MSP430-47
