@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [MoveH.PrjPcb]
+   Generated File[MoveH Messkette einseitig V2.TXT]
+   Generated File[MoveH Messkette einseitig V2.LDP]
+   Generated File[MoveH Messkette einseitig V2.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 21:47:58 On 06.12.2020

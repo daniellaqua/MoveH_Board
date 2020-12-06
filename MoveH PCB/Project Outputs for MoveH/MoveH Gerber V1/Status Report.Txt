@@ -1,0 +1,21 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of Project [MoveH.PrjPcb]
+   Generated File[MoveH Messkette einseitig V2.GTO]
+   Generated File[MoveH Messkette einseitig V2.GTS]
+   Generated File[MoveH Messkette einseitig V2.GTL]
+   Generated File[MoveH Messkette einseitig V2.GBL]
+   Generated File[MoveH Messkette einseitig V2.GBS]
+   Generated File[MoveH Messkette einseitig V2.GBO]
+   Generated File[MoveH Messkette einseitig V2.GM1]
+   Generated File[MoveH Messkette einseitig V2.GM13]
+   Generated File[MoveH Messkette einseitig V2.GKO]
+   Generated File[MoveH Messkette einseitig V2.RUL]
+   Generated File[MoveH Messkette einseitig V2.EXTREP]
+   Generated File[MoveH Messkette einseitig V2.REP]
+
+
+Files Generated   : 12
+Documents Printed : 0
+
+Finished Output Generation At 21:42:40 On 06.12.2020

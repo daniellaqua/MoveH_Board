@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=GND Pin=J1-1
+Removed Pin From Net: NetName=Ladespannung Pin=J1-5
+Added Pin To Net: NetName=Ladespannung Pin=J1-1
+Added Pin To Net: NetName=GND Pin=J1-5
+Added Member To Class: ClassName=POWER MANAGEMENT Member=Component 4,7µF VJ0603
+Added Member To Class: ClassName=POWER MANAGEMENT Member=Component 470 RES 0603
+Added Member To Class: ClassName=POWER MANAGEMENT Member=Component 470 RES 0603
+Added Room: Name=POWER MANAGEMENT
