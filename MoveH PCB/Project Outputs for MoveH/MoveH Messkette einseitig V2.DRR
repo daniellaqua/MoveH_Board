@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------------------------------------------------------
-NCDrill File Report For: MoveH Messkette einseitig V2.PcbDoc   06.12.2020  21:47:58
+NCDrill File Report For: MoveH Messkette einseitig V2.PcbDoc   17.01.2021  18:21:14
 ----------------------------------------------------------------------------------------------------------------------------------
 
 Layer Pair : Top Layer to Bottom Layer
@@ -7,10 +7,10 @@ ASCII RoundHoles File : MoveH Messkette einseitig V2.TXT
 
 Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
 ----------------------------------------------------------------------------------------------------------------------------------
-T1      12mil (0.3mm)                                             Round             100       PTH        0.00inch (0.00mm)
-T2      35mil (0.899mm)                                           Round             40        PTH        0.00inch (0.00mm)
+T1      12mil (0.3mm)                                             Round             126       PTH        0.00inch (0.00mm)
+T2      35mil (0.899mm)                                           Round             47        PTH        0.00inch (0.00mm)
 T3      126mil (3.2mm)                                            Round             4         PTH        0.00inch (0.00mm)
 ----------------------------------------------------------------------------------------------------------------------------------
-Totals                                                                              144
+Totals                                                                              177
 
 Total Processing Time (hh:mm:ss) : 00:00:00

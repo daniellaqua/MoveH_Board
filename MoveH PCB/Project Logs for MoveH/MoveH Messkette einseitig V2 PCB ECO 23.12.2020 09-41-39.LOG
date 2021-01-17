@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=SDAA Pin=R22-1
+Removed Pin From Net: NetName=SCLA Pin=R23-1
+Removed Pin From Net: NetName=SDAA Pin=Sensor-23
+Removed Pin From Net: NetName=SCLA Pin=Sensor-24
+Added Pin To Net: NetName=SCLA Pin=R22-1
+Added Pin To Net: NetName=SDAA Pin=R23-1
+Added Pin To Net: NetName=SCLA Pin=Sensor-23
+Added Pin To Net: NetName=SDAA Pin=Sensor-24
+Added Member To Class: ClassName=POWER MANAGEMENT Member=Component 4,7µF VJ0603
+Added Member To Class: ClassName=POWER MANAGEMENT Member=Component 470 RES 0603
+Added Member To Class: ClassName=POWER MANAGEMENT Member=Component 470 RES 0603
+Added Room: Name=POWER MANAGEMENT

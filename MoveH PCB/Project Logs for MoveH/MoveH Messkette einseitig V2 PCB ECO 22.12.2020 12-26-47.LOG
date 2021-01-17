@@ -1,0 +1,100 @@
+Removed Pin From Net: NetName=1,8V Pin=C7-2
+Removed Pin From Net: NetName=3,3V Pin=C8-2
+Removed Pin From Net: NetName=NetC10_1 Pin=CR1225-2
+Removed Pin From Net: NetName=NetMSP430_31 Pin=MSP430-31
+Removed Pin From Net: NetName=NetMSP430_32 Pin=MSP430-32
+Removed Pin From Net: NetName=NetMSP430_31 Pin=R6-2
+Removed Pin From Net: NetName=NetMSP430_32 Pin=R7-2
+Removed Pin From Net: NetName=3,3V Pin=Sensor-13
+Removed Pin From Net: NetName=NetMSP430_32 Pin=Sensor-23
+Removed Pin From Net: NetName=NetMSP430_31 Pin=Sensor-24
+Removed Pin From Net: NetName=1,8V Pin=U_Reg-1
+Removed Pin From Net: NetName=3,3V Pin=U_Reg-6
+Change component parameters: Designator = "R11"; Footprint = "D12CRCW0805"; UniqueID = "\LLSFFSOY"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Fitted"; Value = "False"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "1738935"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "12k"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R12"; Footprint = "D12CRCW0805"; UniqueID = "\GIZHVRSM"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Fitted"; Value = "False"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "1738935"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "12k"; VariantName = "[No Variations]"
+Added Component: Designator=1V8 Jumper(HDR1X2)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=3V3 Jumper(HDR1X2)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=IC1(SOP65P490X110-8N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Datasheet Link"; Value = "http://www.nxp.com/docs/en/data-sheet/PCA9508.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "1.1mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "NXP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "PCA9508DP,118"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser2 Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser2 Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R22(J1-0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "29-May-2009"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "IPC-7351 Footprint Added."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Chip Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "J1-0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"
+Added Component: Designator=R23(J1-0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "29-May-2009"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "IPC-7351 Footprint Added."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Chip Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "J1-0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=1,8V Pin=1V8 Jumper-1
+Added Pin To Net: NetName=NetMSP430_31 Pin=1V8 Jumper-2
+Added Pin To Net: NetName=3,3V Pin=3V3 Jumper-1
+Added Pin To Net: NetName=NetMSP430_32 Pin=3V3 Jumper-2
+Added Pin To Net: NetName=NetMSP430_31 Pin=C7-2
+Added Pin To Net: NetName=NetMSP430_32 Pin=C8-2
+Added Pin To Net: NetName=1,8V Pin=IC1-1
+Added Pin To Net: NetName=GND Pin=IC1-4
+Added Pin To Net: NetName=3,3V Pin=IC1-5
+Added Pin To Net: NetName=3,3V Pin=IC1-8
+Added Pin To Net: NetName=GND Pin=MSP430-49
+Added Pin To Net: NetName=1,8V Pin=R22-2
+Added Pin To Net: NetName=1,8V Pin=R23-2
+Added Pin To Net: NetName=1,8V Pin=Sensor-13
+Added Pin To Net: NetName=NetMSP430_31 Pin=U_Reg-1
+Added Pin To Net: NetName=NetMSP430_32 Pin=U_Reg-6
+Change Net Name : Old Net Name=NetMSP430_31 New Net Name=Net1V8 Jumper_2
+Change Net Name : Old Net Name=NetMSP430_32 New Net Name=Net3V3 Jumper_2
+Added Pin To Net: NetName=NetIC1_6 Pin=IC1-6
+Added Pin To Net: NetName=NetIC1_6 Pin=MSP430-31
+Added Pin To Net: NetName=NetIC1_6 Pin=R6-2
+Added Net: Name=NetIC1_6
+Added Pin To Net: NetName=NetIC1_7 Pin=IC1-7
+Added Pin To Net: NetName=NetIC1_7 Pin=MSP430-32
+Added Pin To Net: NetName=NetIC1_7 Pin=R7-2
+Added Net: Name=NetIC1_7
+Added Pin To Net: NetName=SCLA Pin=IC1-2
+Added Pin To Net: NetName=SCLA Pin=R23-1
+Added Pin To Net: NetName=SCLA Pin=Sensor-24
+Added Net: Name=SCLA
+Added Pin To Net: NetName=SDAA Pin=IC1-3
+Added Pin To Net: NetName=SDAA Pin=R22-1
+Added Pin To Net: NetName=SDAA Pin=Sensor-23
+Added Net: Name=SDAA
+Added Member To Class: ClassName=POWER MANAGEMENT Member=Component 1V8 Jumper Header 2
+Added Member To Class: ClassName=POWER MANAGEMENT Member=Component 3V3 Jumper Header 2
+Added Member To Class: ClassName=POWER MANAGEMENT Member=Component 4,7µF VJ0603
+Added Member To Class: ClassName=POWER MANAGEMENT Member=Component 470 RES 0603
+Added Member To Class: ClassName=POWER MANAGEMENT Member=Component 470 RES 0603
+Added Room: Name=POWER MANAGEMENT

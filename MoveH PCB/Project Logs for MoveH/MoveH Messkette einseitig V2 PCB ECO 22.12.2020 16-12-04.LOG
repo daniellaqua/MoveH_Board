@@ -1,0 +1,7 @@
+Change Component Designator: OldDesignator=IC1 NewDesignator=Level Shifter
+Change Net Name : Old Net Name=NetIC1_6 New Net Name=NetLevel Shifter_6
+Change Net Name : Old Net Name=NetIC1_7 New Net Name=NetLevel Shifter_7
+Added Member To Class: ClassName=POWER MANAGEMENT Member=Component 4,7µF VJ0603
+Added Member To Class: ClassName=POWER MANAGEMENT Member=Component 470 RES 0603
+Added Member To Class: ClassName=POWER MANAGEMENT Member=Component 470 RES 0603
+Added Room: Name=POWER MANAGEMENT
